@@ -21,12 +21,11 @@
 |---|---|---|
 | 운영 (소스의 원본) | `cookieinteractive/cookieinteractive` 의 `main`, 배포는 `docs/` | https://cookieinteractive.com |
 | 확인용 | `seasaintfromsnowingsea/seasaintfromsnowingsea.github.io` 의 `main` 루트 | https://seasaintfromsnowingsea.github.io/ (평소에는 비워 둠) |
-| 소스 인계 | 확인용 저장소의 `source` 브랜치 | 웹으로 서비스되지 않음. 인계에 썼던 사본 |
 
 2026-11-11 에 새 사이트를 운영 저장소 `main` 에 합쳐 공개했습니다.
-소스의 원본은 이제 운영 저장소입니다. `source` 브랜치는 공개 시점의 사본이며 더 고치지 않습니다.
-확인용 주소는 공개 뒤 비우기로 했습니다 (2026-11-11). 공개 전에 웹 화면으로 확인할 일이 있을 때만 올리고, 확인이 끝나면 다시 비웁니다.
-2026-11-11 현재 확인용 주소에는 공개 시점의 사본이 아직 남아 있습니다 (아래 남은 일 1번).
+소스의 원본은 운영 저장소입니다. 인계에 썼던 확인용 저장소의 `source` 브랜치는 지웠습니다.
+확인용 주소는 공개 뒤 비웠습니다 (2026-11-11). 지금 확인용 저장소 `main` 에는 `.nojekyll`, `logo.png`, `trans01.png` 만 있습니다.
+공개 전에 웹 화면으로 확인할 일이 있을 때만 올리고, 확인이 끝나면 다시 비웁니다.
 
 공개 뒤 확인한 것 (2026-11-11): Pages 배포 소스는 `main` 의 `docs/`, HTTPS 강제가 켜져 있음,
 http 와 www 주소가 https://cookieinteractive.com 으로 넘어감.
@@ -55,7 +54,7 @@ http 와 www 주소가 https://cookieinteractive.com 으로 넘어감.
 
 1. `--staging` 으로 만든 HTML 과 `docs/assets/` 를 저장소 루트에 둡니다.
 2. `CNAME` 을 넣지 않습니다. 넣으면 운영 도메인과 충돌합니다.
-3. 루트의 `.nojekyll`, `logo.png`, `trans01.png`, `logo/` 는 그대로 둡니다.
+3. 루트의 `.nojekyll`, `logo.png`, `trans01.png` 는 그대로 둡니다.
 4. 확인이 끝나면 올린 HTML 과 `assets/` 를 다시 지웁니다. 위 3번의 파일은 남깁니다.
 
 ## 지킬 것
@@ -75,13 +74,11 @@ http 와 www 주소가 https://cookieinteractive.com 으로 넘어감.
 
 ## 남은 일 (2026-11-11 기준)
 
-1. 확인용 주소 비우기: 확인용 저장소 `main` 에서 사이트 파일(`index.html`, `assets/`, `company/`, `en/`, `notice/`, `q-flow/`)을 지웁니다.
-   `.nojekyll`, `logo.png`, `trans01.png`, `logo/` 는 남깁니다. 같은 때 `source` 브랜치를 운영 `main` 과 같게 맞춥니다.
-2. Q-Flow 페이지의 기능 서술을 사용자가 확인 (지금은 그대로 두기로 함)
-3. 소재지는 시 단위까지만 적혀 있음. 주소가 확정되면 사용자가 알려 주는 값으로 고치기
+1. Q-Flow 페이지의 기능 서술을 사용자가 확인 (지금은 그대로 두기로 함)
+2. 소재지는 시 단위까지만 적혀 있음. 주소가 확정되면 사용자가 알려 주는 값으로 고치기
 
 끝낸 일 (2026-11-11): 확인용 주소에서 내용 확인, 운영 저장소 `main` 에 합쳐 공개,
-Pages 설정과 주소 넘어감 확인.
+Pages 설정과 주소 넘어감 확인, 확인용 주소 비우기, `source` 브랜치 지우기.
 
 ## 결정과 기록
 

@@ -40,7 +40,7 @@ HTML을 직접 고쳐도 되고, `tools/build_site.py`의 문구를 고친 뒤 `
 
 ## 확인용 사이트
 
-2026-11-11에 https://cookieinteractive.com 으로 공개했습니다. 공개 전 확인에 쓰던 https://seasaintfromsnowingsea.github.io/ 는 공개 뒤 비우기로 했습니다.
+2026-11-11에 https://cookieinteractive.com 으로 공개했습니다. 공개 전 확인에 쓰던 https://seasaintfromsnowingsea.github.io/ 는 공개 뒤 비웠습니다.
 공개 전에 웹 화면으로 확인할 일이 있으면 `python3 tools/build_site.py <폴더> --staging`으로 만들어 그곳에 잠시 올립니다.
 검색 제외 표시가 들어가고 CNAME을 넣지 않습니다. 확인이 끝나면 다시 비웁니다.
 이 저장소의 docs/는 운영용입니다 (검색 제외 표시 없음, CNAME 포함).
