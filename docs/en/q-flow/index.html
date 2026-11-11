@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q-Flow | Cookie Interactive Inc.</title>
+<meta name="description" content="Q-Flow is engineering software that automates 3D modeling, finite element analysis, and report writing for API 661 air-cooled heat exchanger header boxes. It is in development.">
+<link rel="canonical" href="https://cookieinteractive.com/en/q-flow/">
+<link rel="alternate" hreflang="ko" href="https://cookieinteractive.com/q-flow/">
+<link rel="alternate" hreflang="en" href="https://cookieinteractive.com/en/q-flow/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Q-Flow | Cookie Interactive Inc.">
+<meta property="og:description" content="Q-Flow is engineering software that automates 3D modeling, finite element analysis, and report writing for API 661 air-cooled heat exchanger header boxes. It is in development.">
+<meta property="og:url" content="https://cookieinteractive.com/en/q-flow/">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="stylesheet" href="../../assets/fonts/pretendardvariable-dynamic-subset.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../../en/">
+      <img src="../../assets/mark.png" alt="" width="38" height="38">
+      <span>Cookie Interactive<small lang="ko">쿠키인터랙티브 주식회사</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="../../en/#solutions">Solutions</a></li>
+        <li><a href="../../en/q-flow/" aria-current="page">Q-Flow</a></li>
+        <li><a href="../../en/company/">Company</a></li>
+        <li><a href="../../notice/" hreflang="ko">Notices</a></li>
+        <li class="lang"><a href="../../q-flow/" lang="ko" hreflang="ko">한국어</a></li>
+        <li><a class="btn btn-primary" href="mailto:contact@cookieinteractive.com">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="status-line"><span class="status">In development</span></p>
+        <h1>Q-Flow</h1>
+        <p class="lead">Engineering software that automates the structural analysis of API 661 air-cooled heat exchanger (ACHE) header boxes, from geometry input to report.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="mailto:contact@cookieinteractive.com">Ask about the product</a>
+        </div>
+      </div>
+      <figure class="figure">
+        <img src="../../assets/headerbox-fea.svg" width="2676" height="2061" alt="A header box with two nozzles divided into a mesh, with stress levels shown in color">
+        <figcaption>
+          <span>Header box structural analysis, conceptual illustration</span>
+          <span class="legend">Stress low <i aria-hidden="true"></i> high</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap split">
+      <div>
+        <h2>From manual analysis steps to a single flow</h2>
+        <p class="lead">Q-Flow replaces the work of refining meshes and running load combinations one at a time with an automated procedure. Load combinations that are easy to skip because of time and cost are all calculated by the same procedure.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>3D modeling</h3>
+          <p>Takes the header box and nozzle geometry as input and automatically builds the 3D geometry for analysis.</p>
+        </li>
+        <li>
+          <h3>Finite element analysis</h3>
+          <p>Generates analysis input files in Python, runs them on the CalculiX solver, and calculates every load combination.</p>
+        </li>
+        <li>
+          <h3>Report generation</h3>
+          <p>Writes an analysis report in a standard format, including SCL (stress classification line) results.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band mist">
+    <div class="wrap split">
+      <div>
+        <h2>Eight default load combinations</h2>
+        <p class="lead">By default Q-Flow calculates eight combinations of maximum allowable working pressure (MAWP) with wind and seismic loads in each direction.</p>
+      </div>
+      <table class="table">
+        <thead>
+          <tr><th scope="col">Load</th><th scope="col">Direction</th></tr>
+        </thead>
+        <tbody>
+            <tr><th scope="row">MAWP + wind</th><td>+X, −X, +Y, −Y</td></tr>
+            <tr><th scope="row">MAWP + seismic</th><td>+X, −X, +Y, −Y</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap split">
+      <div>
+        <h2>Product overview</h2>
+        <p class="lead">We are building Q-Flow for EPC engineering teams that review drawings from many vendors.</p>
+      </div>
+      <div>
+        <table class="table">
+          <tbody>
+            <tr><th scope="row">Target equipment</th><td>API 661 air-cooled heat exchangers (ACHE)</td></tr>
+            <tr><th scope="row">Analysis scope</th><td>Header box and nozzles</td></tr>
+            <tr><th scope="row">Solver</th><td>CalculiX</td></tr>
+            <tr><th scope="row">Automation</th><td>Python</td></tr>
+            <tr><th scope="row">Output</th><td>Analysis report including SCL results</td></tr>
+            <tr><th scope="row">Status</th><td>In development (not yet released)</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Q-Flow is in development, so details may change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div>
+        <h2 id="cta-title">Tell us about the analysis or office work you want to automate</h2>
+        <p>We take inquiries about contract development and Q-Flow by email.</p>
+      </div>
+      <a class="btn btn-light" href="mailto:contact@cookieinteractive.com">contact@cookieinteractive.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div class="who">
+        <strong>Cookie Interactive Inc.</strong>
+        <p>
+          <span lang="ko">쿠키인터랙티브 주식회사</span><br>
+          Representative: Bongtae Jeon<br>
+          Business registration no. 620-87-00732<br>
+          Changwon, Gyeongsangnam-do, Republic of Korea<br>
+          <a href="mailto:contact@cookieinteractive.com">contact@cookieinteractive.com</a>
+        </p>
+      </div>
+      <div>
+        <h2>Solutions</h2>
+        <ul>
+          <li><a href="../../en/#solutions">Engineering analysis automation</a></li>
+          <li><a href="../../en/#solutions">Work automation</a></li>
+          <li><a href="../../en/#solutions">Custom software development</a></li>
+          <li><a href="../../en/#solutions">System integration and consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li><a href="../../en/q-flow/">Q-Flow</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="../../en/company/">Company</a></li>
+          <li><a href="../../en/company/#records">Track record</a></li>
+          <li><a href="../../notice/">Notices (in Korean)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p lang="en">© 2026 Cookie Interactive Inc.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
