@@ -28,7 +28,7 @@
 HTML을 직접 고쳐도 되고, `tools/build_site.py`의 문구를 고친 뒤 `python3 tools/build_site.py docs`로 다시 만들어도 됩니다.
 직접 고친 뒤에 생성기를 돌리면 직접 고친 내용이 덮어쓰이니 한쪽 방법만 쓰세요.
 
-## 공개 전에 확인할 것
+## 확인할 것 (공개 전에 적은 목록)
 
 - 문의 이메일 contact@cookieinteractive.com 은 사용 중이라고 확인받았습니다 (사용자, 2026-11-11)
 - Q-Flow 페이지의 기능 서술(3단계, 하중조합 8가지, CalculiX, SCL 보고서, EPC 대상): 기존 초안 문구에서 옮겼습니다. 개발 중인 제품이므로 지금 기준으로 맞는지
@@ -40,6 +40,7 @@ HTML을 직접 고쳐도 되고, `tools/build_site.py`의 문구를 고친 뒤 `
 
 ## 확인용 사이트
 
-공개 전 확인은 https://seasaintfromsnowingsea.github.io/ 에서 합니다 (결정 0012).
-확인용은 `python3 tools/build_site.py <폴더> --staging`으로 만들며, 검색 제외 표시가 들어가고 CNAME을 넣지 않습니다.
-이 묶음의 docs/는 운영용입니다 (검색 제외 표시 없음, CNAME 포함).
+2026-11-11에 https://cookieinteractive.com 으로 공개했습니다. 공개 전 확인에 쓰던 https://seasaintfromsnowingsea.github.io/ 는 공개 뒤 비웠습니다 (결정 0012).
+공개 전에 웹 화면으로 확인할 일이 있으면 `python3 tools/build_site.py <폴더> --staging`으로 만들어 그곳에 잠시 올립니다.
+검색 제외 표시가 들어가고 CNAME을 넣지 않습니다. 확인이 끝나면 다시 비웁니다.
+이 저장소의 docs/는 운영용입니다 (검색 제외 표시 없음, CNAME 포함).

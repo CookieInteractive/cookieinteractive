@@ -19,12 +19,16 @@
 
 | 용도 | 저장소 | 주소 |
 |---|---|---|
-| 운영 | `cookieinteractive/cookieinteractive` 의 `docs/` | https://cookieinteractive.com |
-| 확인용 | `seasaintfromsnowingsea/seasaintfromsnowingsea.github.io` 의 `main` 루트 | https://seasaintfromsnowingsea.github.io/ |
-| 소스 인계 | 확인용 저장소의 `source` 브랜치 (이 구조 그대로) | 웹으로 서비스되지 않음 |
+| 운영 (소스의 원본) | `cookieinteractive/cookieinteractive` 의 `main`, 배포는 `docs/` | https://cookieinteractive.com |
+| 확인용 | `seasaintfromsnowingsea/seasaintfromsnowingsea.github.io` 의 `main` 루트 | https://seasaintfromsnowingsea.github.io/ (평소에는 비어 있음) |
+| 소스 인계 | 확인용 저장소의 `source` 브랜치 | 웹으로 서비스되지 않음. 인계에 썼던 사본 |
 
-2026-11-11 현재 확인용은 게시되어 있고, 운영 저장소에는 아직 올리지 않았습니다.
-운영 주소에는 예전의 제목 한 줄짜리 페이지가 그대로 있습니다.
+2026-11-11 에 새 사이트를 운영 저장소 `main` 에 합쳐 공개했습니다.
+소스의 원본은 이제 운영 저장소입니다. `source` 브랜치는 공개 시점의 사본이며 더 고치지 않습니다.
+확인용 주소는 공개 뒤 비웠습니다. 공개 전에 웹 화면으로 확인할 일이 있을 때만 올리고, 확인이 끝나면 다시 비웁니다.
+
+공개 뒤 확인한 것 (2026-11-11): Pages 배포 소스는 `main` 의 `docs/`, HTTPS 강제가 켜져 있음,
+http 와 www 주소가 https://cookieinteractive.com 으로 넘어감.
 
 ## 만드는 명령
 
@@ -41,17 +45,17 @@
 운영 저장소:
 
 1. 운영 저장소를 받아 새 브랜치를 만듭니다. `main` 에 바로 올리지 않습니다.
-2. 이 폴더의 `docs/`, `tools/`, `README.md`, `CLAUDE.md` 로 바꿉니다. `docs/CNAME` 은 그대로 둡니다.
+2. `tools/build_site.py` 를 고치고 `python3 tools/build_site.py docs` 로 다시 만듭니다. `docs/CNAME` 은 그대로 둡니다.
 3. 브랜치를 올리고 사용자에게 알립니다.
-4. 사용자가 승인한 뒤에만 `main` 에 합칩니다. 합치면 바로 공개됩니다.
-5. 공개 뒤 확인합니다: Pages 배포 소스가 `main` 의 `docs/` 인지, HTTPS 강제가 켜져 있는지,
-   http 와 www 주소가 https://cookieinteractive.com 으로 넘어가는지.
+4. 사용자가 승인한 뒤에만 `main` 에 합칩니다. 합치면 1분쯤 뒤 공개됩니다.
+5. 공개 뒤 바뀐 페이지가 https://cookieinteractive.com 에서 보이는지 확인하고, 다 쓴 브랜치는 지웁니다.
 
-확인용 저장소 (`main`):
+확인용 저장소 (`main`), 웹 화면으로 먼저 확인할 때만:
 
 1. `--staging` 으로 만든 HTML 과 `docs/assets/` 를 저장소 루트에 둡니다.
 2. `CNAME` 을 넣지 않습니다. 넣으면 운영 도메인과 충돌합니다.
 3. 루트의 `.nojekyll`, `logo.png`, `trans01.png`, `logo/` 는 그대로 둡니다.
+4. 확인이 끝나면 올린 HTML 과 `assets/` 를 다시 지웁니다. 위 3번의 파일은 남깁니다.
 
 ## 지킬 것
 
@@ -70,15 +74,14 @@
 
 ## 남은 일 (2026-11-11 기준)
 
-1. 사용자가 확인용 주소에서 내용을 확인
-2. 운영 저장소에 브랜치로 올리기, 승인 뒤 `main` 에 합치기
-3. 공개 뒤 Pages 설정과 주소 넘어감 확인
-4. Q-Flow 페이지의 기능 서술을 사용자가 확인 (지금은 그대로 두기로 함)
-5. 소재지는 시 단위까지만 적혀 있음. 주소가 확정되면 사용자가 알려 주는 값으로 고치기
-6. 공개 뒤 확인용 주소를 어떻게 할지 사용자와 정하기
+1. Q-Flow 페이지의 기능 서술을 사용자가 확인 (지금은 그대로 두기로 함)
+2. 소재지는 시 단위까지만 적혀 있음. 주소가 확정되면 사용자가 알려 주는 값으로 고치기
+
+끝낸 일 (2026-11-11): 확인용 주소에서 내용 확인, 운영 저장소 `main` 에 합쳐 공개,
+Pages 설정과 주소 넘어감 확인, 공개 뒤 확인용 주소 비우기.
 
 ## 결정과 기록
 
-결정 기록(0001~0012), 작업 일지, 운영 절차는 사용자의 위키 `claude:projects:ckii-website:start` 에 있습니다.
+결정 기록(0001~0013), 작업 일지, 운영 절차는 사용자의 위키 `claude:projects:ckii-website:start` 에 있습니다.
 위키를 읽을 수 없으면 사용자에게 해당 내용을 요청합니다. 이 저장소는 공개 저장소이므로
 회사 내부 사정이나 결정의 배경을 여기에 옮겨 적지 않습니다.
